@@ -20,7 +20,7 @@ public class JDBCExample1 {
         Class.forName("oracle.jdbc.driver.OracleDriver");
         Connection connect = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","Sreesha");
         Statement statement = connect.createStatement();
-        //statement.execute("CREATE TABLE DB02(EMPNO NUMBER, EMPNAME VARCHAR2(30), EMPADDRESS VARCHAR2(30))");
+        statement.execute("CREATE TABLE DB02(EMPNO NUMBER, EMPNAME VARCHAR2(30), EMPADDRESS VARCHAR2(30))");
         System.out.println("Table Created Successfully");
     }
     
